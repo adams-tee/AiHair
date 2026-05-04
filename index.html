@@ -54,8 +54,8 @@
         numFaces: 1
     });
     startCamera();
-}
 
+    
     function startCamera() {
         navigator.mediaDevices.getUserMedia({ video: { width: 1280, height: 720 } }).then((stream) => {
             video.srcObject = stream;
